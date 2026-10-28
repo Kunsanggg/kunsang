@@ -88,7 +88,7 @@ header{
     top:calc(100% + 8px);
     right:0;
     z-index:1;
-    min-width:260px;
+    width:min(320px, calc(100vw - 40px));
     padding:12px;
     border-radius:10px;
     background:white;
@@ -101,6 +101,14 @@ header{
     border-radius:6px;
     color:#0f172a;
     text-decoration:none;
+}
+
+.site-menu nav a img{
+    display:block;
+    width:100%;
+    height:auto;
+    margin-bottom:8px;
+    border-radius:4px;
 }
 
 .site-menu nav a:hover{
@@ -294,7 +302,7 @@ footer{
 <span class="menu-icon" aria-hidden="true"></span>
 </summary>
 <nav aria-label="Portfolio navigation">
-<a href="regression.html">How smoking impacts mental distress</a>
+<a href="regression.html"><img src="table.png" alt="Regression output table">How smoking impacts mental distress</a>
 </nav>
 </details>
 
