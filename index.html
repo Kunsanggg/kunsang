@@ -32,6 +32,81 @@ header{
     padding:120px 20px;
 }
 
+.site-menu{
+    position:relative;
+    display:flex;
+    justify-content:flex-end;
+    margin-bottom:24px;
+}
+
+.site-menu summary{
+    width:48px;
+    height:44px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(255,255,255,.7);
+    border-radius:8px;
+    cursor:pointer;
+    list-style:none;
+}
+
+.site-menu summary::-webkit-details-marker{
+    display:none;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after{
+    display:block;
+    width:22px;
+    height:2px;
+    background:white;
+}
+
+.menu-icon{
+    position:relative;
+}
+
+.menu-icon::before,
+.menu-icon::after{
+    position:absolute;
+    content:"";
+    left:0;
+}
+
+.menu-icon::before{
+    top:-7px;
+}
+
+.menu-icon::after{
+    top:7px;
+}
+
+.site-menu nav{
+    position:absolute;
+    top:calc(100% + 8px);
+    right:0;
+    z-index:1;
+    min-width:260px;
+    padding:12px;
+    border-radius:10px;
+    background:white;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.site-menu nav a{
+    display:block;
+    padding:10px 12px;
+    border-radius:6px;
+    color:#0f172a;
+    text-decoration:none;
+}
+
+.site-menu nav a:hover{
+    background:#f1f5f9;
+}
+
 .hero{
     display:flex;
     justify-content:space-between;
@@ -213,6 +288,15 @@ footer{
 <header>
 
 <div class="container">
+
+<details class="site-menu">
+<summary aria-label="Toggle navigation menu">
+<span class="menu-icon" aria-hidden="true"></span>
+</summary>
+<nav aria-label="Portfolio navigation">
+<a href="regression.html">How smoking impacts mental distress</a>
+</nav>
+</details>
 
 <div class="hero">
 
