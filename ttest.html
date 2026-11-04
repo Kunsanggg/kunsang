@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Does Your Writing Hand Perform Better Than Your Other Hand?</title>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    color: #222222;
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem 2rem;
+}
+
+.site-menu {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-menu summary {
+    width: 48px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #64748b;
+    border-radius: 8px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.site-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu-icon,
+.menu-icon::before,
+.menu-icon::after {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: #334155;
+}
+
+.menu-icon {
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    position: absolute;
+    content: "";
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -7px;
+}
+
+.menu-icon::after {
+    top: 7px;
+}
+
+.site-menu nav {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 1;
+    width: min(320px, calc(100vw - 40px));
+    padding: 12px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+}
+
+.site-menu nav a {
+    display: block;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: #0f172a;
+    text-decoration: none;
+    line-height: 1.5;
+}
+
+.site-menu nav a:hover {
+    background: #f1f5f9;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin: 0 0 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    line-height: 1.4;
+    margin: 2rem 0 .75rem;
+}
+
+p,
+li {
+    font-size: 1.1rem;
+}
+
+p {
+    margin: 0 0 1.5rem;
+}
+
+ol {
+    padding-left: 1.5rem;
+    margin: 0 0 1.5rem;
+}
+
+li {
+    padding-left: .25rem;
+    margin-bottom: 1rem;
+}
+
+.table-wrap {
+    width: 100%;
+    overflow-x: auto;
+    margin-bottom: 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .95rem;
+    line-height: 1.5;
+}
+
+th,
+td {
+    padding: .7rem .55rem;
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+}
+
+th {
+    color: #334155;
+    font-size: .85rem;
+}
+
+.footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #dddddd;
+    font-size: .9rem;
+    color: #555555;
+}
+
+.footer a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .name-course {
+    margin: 0;
+    font-size: .85rem;
+}
+
+@media (max-width: 520px) {
+    .container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    table {
+        font-size: .82rem;
+    }
+
+    th,
+    td {
+        padding: .55rem .35rem;
+    }
+}
+</style>
+</head>
+<body>
+<main class="container">
+<details class="site-menu">
+<summary aria-label="Toggle navigation menu">
+<span class="menu-icon" aria-hidden="true"></span>
+</summary>
+<nav aria-label="Portfolio navigation">
+<a href="regression.html">How smoking impacts mental distress</a>
+<a href="ttest.html">Does Your Writing Hand Perform Better Than Your Other Hand?</a>
+</nav>
+</details>
+
+<h1>Does Your Writing Hand Perform Better Than Your Other Hand?</h1>
+
+<h2>What We Did</h2>
+<p>Our class completed a writing activity using our writing hands and other hands. We compared the class results and looked at the Yes and No groups. We used three statistical tests to compare the results.</p>
+
+<h2>My Results</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th scope="col">Test</th>
+<th scope="col">Mean 1</th>
+<th scope="col">Mean 2</th>
+<th scope="col">Difference</th>
+<th scope="col">p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One-sample</td>
+<td><strong>6.333</strong></td>
+<td><strong>8.000</strong></td>
+<td><strong>-1.667</strong></td>
+<td><strong>0.001053</strong></td>
+</tr>
+<tr>
+<td>Independent-samples</td>
+<td><strong>6.400</strong></td>
+<td><strong>6.250</strong></td>
+<td><strong>0.150</strong></td>
+<td><strong>0.8481</strong></td>
+</tr>
+<tr>
+<td>Paired-samples</td>
+<td><strong>6.333</strong></td>
+<td><strong>2.556</strong></td>
+<td><strong>3.778</strong></td>
+<td><strong>0.00000647</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>The Three Write-Ups</h2>
+<ol>
+<li>One-sample: The writing-hand average was 1.667 lower than the benchmark. The p-value was below 0.05, so the result was significant.</li>
+<li>Independent-samples: The Yes group scored 0.150 higher than the No group. The p-value was above 0.05, so the result was not significant.</li>
+<li>Paired-samples: The writing hand scored 3.778 higher than the other hand. The p-value was below 0.05, so the result was significant.</li>
+</ol>
+
+<h2>In Plain Words</h2>
+<p>The writing hand had a higher average than the other hand. The Yes and No groups had almost the same results. These results show differences but do not prove what caused them.</p>
+
+<h2>What I Would Do Differently</h2>
+<p>I would include more students and use more classrooms. I would also change the order of the writing activity so practice and tiredness would not affect the results as much.</p>
+
+<footer class="footer">
+<p><a href="index.html">Home</a></p>
+<p class="name-course">Kuisang Lama<br>PH 320 · Applied Biostatistics in Public Health</p>
+</footer>
+</main>
+</body>
+</html>
